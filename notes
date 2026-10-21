@@ -1,0 +1,83 @@
+-----------VALORES--------------------
+
+let point = 6009
+let time = 13
+
+if (point >=1000 && time >= 12) {
+    console.log ("Diamante")
+} else if (point >= 500) {
+    console.log ("Ouro")
+} else if (point >= 100) {
+    console.log ("Prata")
+} else {
+    console.log ("Bronze")
+}
+
+for (let i = 50; i >= 0; i--) {
+    console.log(i)
+}
+
+---------------TEXTO--------------------------
+
+let name = "julia"
+saudacao(name)
+
+function saudacao(name){
+    console.log("Olá " + name)
+}
+
+-----Calculos-----------------------------------------------
+
+let numerI = 2
+let numberII = 4
+
+let resultado = somar(numerI, numberII)
+
+-------[mostrar o resultado]------------
+console.log(resultado)
+
+-------[conta]------------
+function somar (numberI, numberII){
+    return numberI + numberII
+}
+
+--------------TABUADA----------------
+
+gerartabuada(numberII)
+
+function gerartabuada(numberII){
+    for(i =0; i <= 10; i++){
+        console.log(numberII * i)
+    }
+}
+
+-----------CALCULO EM ALERT FORMAT-------------------
+
+let peso = parseFloat( prompt ("Digite o seu peso (KG)"))
+let altura = parseFloat( prompt ("Digite a sua altura (m)"))
+
+let IMC = calcularIMC(peso, altura)
+
+function calcularIMC(peso, altura){
+    return peso / (altura * altura)
+}
+
+if (IMC >= 40){
+    alert("Obesidade Grave")
+} else if (IMC >= 35){
+    alert("Obesidade Grau II")
+} else if (IMC >= 30){
+    alert("Obesidade Grau I")
+} else if (IMC >= 25){
+    alert("Sobrepeso")
+} else if (IMC >= 18,5){
+    alert("Suadável")
+} else if (IMC < 18,5){
+    alert("Magreza")
+}
+
+gerarRelatorio(peso, altura)
+function gerarRelatorio(peso, altura){
+    alert("O seu peso " + peso + "\ne a sua altura " + altura)
+}
+
